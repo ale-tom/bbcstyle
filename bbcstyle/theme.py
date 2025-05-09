@@ -1,6 +1,4 @@
 # bbplot/theme.py
-
-import matplotlib.pyplot as plt
 import matplotlib as mpl
 import seaborn as sns
 
