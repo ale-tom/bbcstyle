@@ -17,13 +17,15 @@ def bbc_theme(font_family: str = "DejaVu Sans") -> None:
     rc = {
         # Font and text
         "font.family": font_family,
-        "axes.titlesize": 28,
+        "axes.titlesize": 20,
         "axes.titleweight": "bold",
         "axes.titlecolor": base_color,
         "axes.labelsize": 0,  # BBC typically omits axis labels
         "xtick.labelsize": 18,
         "ytick.labelsize": 18,
         "text.color": base_color,
+        "figure.titlesize": 24,
+        "figure.titleweight": "bold",
         # Axes
         "axes.edgecolor": "none",  # No spines
         "axes.grid": True,
