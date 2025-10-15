@@ -1,8 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
-setup(
-    name="bbcstyle",
-    version="1.0",
-    packages=find_packages(where="bbcstyle"),
-    package_dir={"": "bbcstyle"},
-)
+if __name__ == "__main__":
+    setup()
