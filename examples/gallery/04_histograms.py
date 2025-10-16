@@ -94,12 +94,12 @@ def _draw_bricklines(
     line_color: str = "white",
 ) -> None:
     """Overlay white horizontal separators so bars look like stacked bricks."""
-    for l, w, h in zip(lefts, widths, heights):
+    for lft, w, h in zip(lefts, widths, heights):
         if h <= 1:
             continue
         # integer separators at y = 1..h-1
         ys = np.arange(1, int(h))
-        ax.hlines(ys, l, l + w, colors=line_color, linewidths=0.8, zorder=4)
+        ax.hlines(ys, lft, lft + w, colors=line_color, linewidths=0.8, zorder=4)
 
 
 class StackedSymbol:
@@ -359,6 +359,6 @@ if __name__ == "__main__":
     dem = make_synthetic_votes(n=260, mean=0.06, sd=0.05, bias=0.00, seed=7)
     rep = make_synthetic_votes(n=260, mean=-0.06, sd=0.05, bias=0.00, seed=11)
 
-    out_path = Path(__file__).with_suffix("").parent / "out" / "blue_wave_histogram.png"
+    out_path = Path(__file__).with_suffix("").parent / "out" / "histograms.png"
     fig, _ = plot_blue_wave(dem, rep, savepath=out_path)
     print(f"Saved: {out_path}")

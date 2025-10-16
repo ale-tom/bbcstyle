@@ -5,7 +5,6 @@ def bbc_theme(font_family: str = "DejaVu Sans") -> None:
     """Apply the BBC theme via Matplotlib rcParams; integrates with Seaborn if available."""
     base_color = "#222222"
     grid_color = "#cbcbcb"
-    accent_color = "#007f7f"
 
     rc = {
         "font.family": font_family,

@@ -121,7 +121,6 @@ def prepare_plot_data(
 
 
 if __name__ == "__main__":
-
     # %% scrape data
     pensions_url = "http://infographics.economist.com/databank/Economist_pensions.csv"
     wiki_url = "https://en.wikipedia.org/wiki/OECD"
