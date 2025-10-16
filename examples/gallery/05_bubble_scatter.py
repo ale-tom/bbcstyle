@@ -251,15 +251,16 @@ def plot_bubble_scatter(
 
 
 if __name__ == "__main__":
-    out_path = Path("assets/bbc_logo.png")
+    out_path = Path("examples/gallery/out/bubble_scatter.png")
+    logo_path = Path("assets/bbc_logo.png")
     df = _mock_cities()
     plot_bubble_scatter(
         df=df,
         title="Fast-growing cities face worse climate risks",
         subtitle="Population growth 2018–2035 over climate change vulnerability",
         source="Source: Simulated data | design by BBC.",
-        logo_path=out_path,
-        output_path=Path("examples/gallery/out/bubble_scatter.png"),
+        logo_path=logo_path,
+        output_path=out_path,
         figsize=(12, 8),
     )
     print(f"Saved: {out_path}")

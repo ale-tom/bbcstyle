@@ -6,7 +6,7 @@ panel stacks "Didn't win" (light shade) and "Won seat" (dark shade). The legend
 uses custom stacked symbols that combine blue (Dem) and red (Rep). The y-axes
 have no spines or tick marks — only the numeric labels remain for readability.
 
-Running this file saves a PNG to ./examples/gallery/out/blue_wave_histogram.png.
+Running this file saves a PNG to ./examples/gallery/out/histograms.png.
 """
 
 from __future__ import annotations

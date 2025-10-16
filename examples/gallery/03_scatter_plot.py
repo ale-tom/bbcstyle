@@ -284,7 +284,6 @@ if __name__ == "__main__":
         title="Brazil's golden oldie blowout",
         subtitle="Originally designed with Financial Time style - reproduced using BBC style ",
         source="Source: OECD; World Bank; Previdência Social | original design by Nguyen Chi Dung",
-        output_path="./assets/pensions_plot.png",
         dpi=300,
         enforce_size=True,
     )
@@ -292,6 +291,6 @@ if __name__ == "__main__":
 
     out_dir = Path(__file__).with_suffix("").parent / "out"
     out_dir.mkdir(parents=True, exist_ok=True)
-    out_path = out_dir / "scatter_plot.png"
+    out_path = out_dir / "scatter.png"
     fig.savefig(out_path)
     print(f"Saved: {out_path}")
