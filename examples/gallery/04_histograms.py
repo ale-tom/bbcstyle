@@ -24,6 +24,11 @@ from matplotlib.ticker import FixedLocator, FuncFormatter
 import warnings
 import sys
 
+try:
+    from bbcstyle.finalise_plot import finalise_plot
+except Exception as exc:
+    warnings.warn(f"bbcstyle.finalise_plot not available: {exc}")
+
 
 # Optional: allow running examples without installing the package
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
@@ -192,8 +197,8 @@ def plot_blue_wave(
         ax.tick_params(axis="y", length=0)
         ax.xaxis.set_tick_params(width=0)
         ax.set_ylim(0, ymax)
-        ax.grid(axis="x", which="major", alpha=0.25)
-        ax.grid(axis="x", which="minor", alpha=0.15)
+        ax.grid(axis="x", which="major", alpha=0)
+        ax.grid(axis="x", which="minor", alpha=0)
         ax.grid(axis="y", which="major", alpha=0.20, ls="-", lw=2)
 
     # Top: Democrats
@@ -286,6 +291,7 @@ def plot_blue_wave(
     # Legend with stacked symbols (blue over red)
     won_handle = StackedSymbol(top_color=blue_dark, bottom_color=red_dark)
     lose_handle = StackedSymbol(top_color=blue_light, bottom_color=red_light)
+
     leg = ax_top.legend(
         [won_handle, lose_handle],
         ["Won seat", "Didn't win"],
@@ -295,10 +301,15 @@ def plot_blue_wave(
         frameon=False,
         borderaxespad=0.0,
         handlelength=1.2,
-        handleheight=1,
+        handleheight=0.3,  # adjust with your marker size
         ncols=2,
+        alignment="center",
     )
     for txt in leg.get_texts():
+        try:
+            txt.set_va("center_baseline")  # best when available
+        except Exception:
+            txt.set_va("center")
         txt.set_fontsize(12)
 
     # Example annotations
@@ -325,11 +336,13 @@ def plot_blue_wave(
         ),
     )
 
-    from bbcstyle.finalise_plot import finalise_plot
-
     finalise_plot(
         fig=fig,
+        logo_path="assets/bbc_logo.png",
         source="Source: Simulated data | original design by BBC",
+        logo_zoom=0.5,
+        logo_vertical_pad_pts=-2,
+        divider_gap_pts=6,
     )
 
     # Save

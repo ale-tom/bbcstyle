@@ -293,6 +293,6 @@ if __name__ == "__main__":
 
     out_dir = Path(__file__).with_suffix("").parent / "out"
     out_dir.mkdir(parents=True, exist_ok=True)
-    out_path = out_dir / "scatter.png"
+    out_path = out_dir / "scatter_plot.png"
     fig.savefig(out_path)
     print(f"Saved: {out_path}")
