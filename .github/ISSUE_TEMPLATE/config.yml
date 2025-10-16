@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://github.com/ale-tom/bbcstyle/discussions/new
+    about: Usage questions and ideas
+  - name: Report a bug
+    url: https://github.com/ale-tom/bbcstyle/issues/new/choose
+    about: Repro steps + versions help us fix things fast
