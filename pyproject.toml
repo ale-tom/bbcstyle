@@ -9,7 +9,7 @@ description = "BBC-inspired Matplotlib/Seaborn theme for clean, publication-read
 readme = "README.md"
 requires-python = ">=3.8"
 license = "MIT"
-authors = [{ name = "ale-tom" }]
+authors = [{ name = "Alessandro Tomassini" }]
 keywords = ["matplotlib", "seaborn", "theme", "visualization", "bbc"]
 dependencies = ["matplotlib>=3.5", "seaborn>=0.12"]
 classifiers = [
@@ -26,6 +26,8 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/ale-tom/bbcstyle"
 Issues = "https://github.com/ale-tom/bbcstyle/issues"
+Changelog = "https://github.com/ale-tom/bbcstyle/releases"
+Contact = "https://github.com/ale-tom/bbcstyle/issues/new/choose"
 
 [tool.setuptools]
 include-package-data = true
