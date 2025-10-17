@@ -4,11 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bbcstyle"
-version = "0.1.0"
+version = "0.1.1"
 description = "BBC-inspired Matplotlib/Seaborn theme for clean, publication-ready charts."
-readme = "README.md"
+readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.8"
 license = "MIT"
+license-files = ["LICENSE*"]
 authors = [{ name = "Alessandro Tomassini" }]
 keywords = ["matplotlib", "seaborn", "theme", "visualization", "bbc"]
 dependencies = ["matplotlib>=3.5", "seaborn>=0.12"]
@@ -31,11 +32,7 @@ Contact = "https://github.com/ale-tom/bbcstyle/issues/new/choose"
 
 [tool.setuptools]
 include-package-data = true
-license-files = ["LICENSE*"]
 
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["bbcstyle*"]
-
-[tool.setuptools.package-data]
-"bbcstyle" = ["assets/*"]
