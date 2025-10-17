@@ -5,9 +5,10 @@
 
 bbcstyle is a lightweight Python package that applies a BBC News-inspired visual theme to Matplotlib and Seaborn plots. It helps you create clean, publication-ready charts with consistent typography, minimalist gridlines, and optional source annotations or logos. Inspired by the R package [`bbplot`](https://github.com/bbc/bbplot)  but tailored for Python, this theme is ideal for reports, dashboards, and data journalism.
 
-
-<img src="assets/front_page.png" alt="BBC style" width="800"/>
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ale-tom/bbcstyle/main/assets/front_page.png"
+       alt="Plots styled with bbcstyle" width="800">
+</p>
 
 ## Quick start
 
@@ -102,35 +103,48 @@ finalise_plot(
 ## Gallery
 `examples/gallery/01_bar_chart.py`
 
-<img src="examples/gallery/out/bar_chart.png" alt="BBC style" width="600"/>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ale-tom/bbcstyle/main/examples/gallery/out/bar_chart.png"
+       alt="Bar chart styled with bbcstyle" width="600">
+</p>
 
 <br><br>
 
 `examples/gallery/02_line_chart.py`
 
-<img src="examples/gallery/out/line_chart.png" alt="BBC style" width="600"/>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ale-tom/bbcstyle/main/examples/gallery/out/line_chart.png"
+       alt="Line plot styled with bbcstyle" width="600">
+</p>
 <br><br>
 
 `examples/gallery/03_scatter_plot.py`
 
-<img src="examples/gallery/out/scatter.png" alt="BBC style" width="600"/>
-<br><br>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ale-tom/bbcstyle/main/examples/gallery/out/scatter.png"
+       alt="Scatter plot styled with bbcstyle" width="600">
+</p>
 
 `examples/gallery/04_histograms.py`
 
-<img src="examples/gallery/out/histograms.png" alt="BBC style" width="600"/>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ale-tom/bbcstyle/main/examples/gallery/out/histograms.png"
+       alt="Blue wave histogram styled with bbcstyle" width="600">
+</p>
 <br><br>
 
 `examples/gallery/05_bubble_scatter.py`
 
-<img src="examples/gallery/out/bubble_scatter.png" alt="BBC style" width="600"/>
-<br><br>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ale-tom/bbcstyle/main/examples/gallery/out/bubble_scatter.png"
+       alt="Bubble scatter plot styled with bbcstyle" width="600">
+</p><br><br>
 
 Run them to generate PNGs in `examples/gallery/out/`.
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
+This project is licensed under the MIT License. See [LICENSE](https://raw.githubusercontent.com/ale-tom/bbcstyle/main/LICENSE) for details.
 
 > **Note:** “BBC” is a trademark of the British Broadcasting Corporation. This project is not affiliated with, endorsed by, or sponsored by the BBC. “BBC-inspired” refers to the general look & feel of certain public graphics.
 
@@ -141,7 +155,7 @@ Found a bug or have a feature request? Please open an issue and include:
 - your **Python**, **Matplotlib**, and **Seaborn** versions, plus OS
 - what you **expected** vs what you **observed**, and any screenshots
 
-See [bug report](./.github/ISSUE_TEMPLATE/bug_report.md) and [feature request](./.github/ISSUE_TEMPLATE/feature_request.md) for details.
+See [bug report](https://raw.githubusercontent.com/ale-tom/bbcstyle/main/.github/ISSUE_TEMPLATE/bug_report.md) and [feature request](https://raw.githubusercontent.com/ale-tom/bbcstyle/main/.github/ISSUE_TEMPLATE/feature_request.md) for details.
 
 ## Contributing
 
@@ -150,7 +164,7 @@ Contributions are welcome! A good first PR is often:
 - an additional **gallery** example in `examples/gallery/`,
 - or a doc improvement.
 
-See [contributing](./docs/CONTRIBUTING.md) for details.
+See [contributing](https://raw.githubusercontent.com/ale-tom/bbcstyle/main/docs/CONTRIBUTING.md) for details.
 
 ### Quick dev setup:
 
@@ -168,10 +182,10 @@ Open an issue before large changes.
 Keep examples pure-Python (no notebooks) and save images to examples/gallery/out/.
 Run ruff and the pre-commit hooks; keep PRs focused and small.
 Add or update a test when changing behavior.
-See [contributing](./docs/CONTRIBUTING.md) for details.
+See [contributing](https://raw.githubusercontent.com/ale-tom/bbcstyle/main/docs/CONTRIBUTING.md) for details.
 
 ## Code of Conduct
-We follow the [Contributor Covenant](./docs/CODE_OF_CONDUCT.md). By participating, you agree to uphold this standard.
+We follow the [Contributor Covenant](https://raw.githubusercontent.com/ale-tom/bbcstyle/main/docs/CODE_OF_CONDUCT.md). By participating, you agree to uphold this standard.
 
 ## Authorship & credits
 Created and maintained by Alessandro Tomassini (@ale-tom).

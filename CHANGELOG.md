@@ -4,10 +4,18 @@ All notable changes to this project will be documented here.
 The format is based on Keep a Changelog, and this project adheres to Semantic Versioning.
 
 
-### Added
-- (placeholder) Add notes for changes merged after 0.1.0.
+## [0.1.1] - 2025-10-17
 
----
+### Changed
+- Packaging: move `license-files` to `[project]` to silence Setuptools deprecation.
+- Packaging: stop including non-runtime images from repo-root `assets/` in the wheel.
+- README: switch gallery images to absolute GitHub URLs so they render on PyPI.
+
+### Added
+- Tooling: `.pre-commit-config.yaml` with Ruff + basic hygiene hooks.
+
+### Fixed
+- Trusted Publishing configuration to PyPI (release now uploads correctly).
 
 ## [0.1.0] - 2025-10-16
 
